@@ -8,6 +8,16 @@ categories:
 
 talks:
 
+  - title: "Emulators for constraining chiral EFT Hamiltonians"
+    event: "Workshop on Bridging Effective Field Theory Across Subatomic Scales"
+    location: ECT*, Trento, Italy "
+    date: 
+    type: Invited Talk 
+    link: 
+    slides: 
+    ribbon: UPCOMING
+    category: invited-talk
+
   - title: "QMC and Chiral EFT: Uncertainty Quantification and Perturbation Theory"
     event: "Nuclear Hamiltonians for Advancing Nuclear Physics and Beyond"
     location: "Institute for Nuclear Theory, Seattle, WA, USA"
@@ -32,66 +42,103 @@ talks:
   - title: "Perturbative treatment of non-local operators in quantum Monte Carlo"
     event: "2025 Workshop on Progress in Ab Initio Nuclear Theory"
     location: "TRIUMF, Vancouver, BC, Canada"
-    date: "February 2025"
+    date: 
     type: "Invited Talk"
     link: https://indico.triumf.ca/event/608/ 
     slides: assets/talks/TRIUMF-2025.pdf
+    ribbon: FEB 2025
     category: invited-talk
   
   - title: "Perturbative treatment of non-local operators in an ab initio context"
     event: "2024 American Physical Society (APS) Division of Nuclear Physics (DNP) Meeting"
     location: "Boston MA, USA"
-    date: "October 2024"
+    date: 
     type: "Contributed Talk"
     link: https://www.aps.org/events/2024/fall-dnp
     slides: assets/talks/DNP-2024.pdf
-    ribbon: CONTRIBUTED
+    ribbon: OCT 2024 
     category: contributed-talk
 
 
   - title: "Perturbative treatment of non-local operators in an ab initio context"
     event: "T-2 Seminar"
     location: "Los Alamos National Laboratory, Los Alamos, NM, USA"
-    date: "August 2024"
+    date:
     type: "Invited Talk"
     link: 
     slides: assets/talks/T2-2024.pdf
+    ribbon: AUG 2024
     category: invited-talk
 
 
   - title: "Perturbing the Envelope: A new approach to perturbation theory in quantum Monte Carlo"
     event: "2024 T-Division Student Lightning Talks"
     location: "Los Alamos National Laboratory, Los Alamos, NM, USA"
-    date: "July 2024"
+    date: 
     type: "Contributed Talk"
     link: 
-    slides: assets/talks/T_lightning-2024.pdf
+    slides: 
+    ribbon: JUL 2024
     category: contributed-talk
 
 
   - title: "Probing the nuclear many-body problem with quantum Monte Carlo"
     event: "2024 Canadian Association of Physicists (CAP) Congress"
     location: "Western University, London, ON, Canada"
-    date: "May 2024"
+    date: 
     type: "Contributed Talk"
     link: https://indico.global/event/440/timetable/?view=standard_numbered_inline_minutes 
-    slides: assets/talks/CAP-2024.pdf
+    slides: 
+    ribbon: MAY 2024
     category: contributed-talk
 
   - title: "Second order perturbation theory in quantum Monte Carlo"
     event: "Theory Canada 16 Conference"
     location: "Institute for Quantum Computing (IQC), Waterloo, ON, Canada"
-    date: "May 2024"
+    date: 
     type: "Contributed Talk"
     link: https://indico.global/event/441/ 
-    slides: assets/talks/TC-2024.pdf
+    slides: 
+    ribbon: MAY 2024
     category: contributed-talk
   
   - title: "Perturbing the Envelope: A new approach to perturbation theory in quantum Monte Carlo"
     event: "7th Annual Meeting of the Toronto Ultra Cold Atoms Network (TUCAN)"
     location: "McMaster University, Hamilton, ON, Canada"
-    date: "May 2024"
+    date: 
     type: "Invited Talk"
     link: 
-    slides: assets/talks/TUCAN-2024.pdf
+    slides: 
+    ribbon: MAY 2024
     category: invited-talk
+
+  - title: "Novel pairing and testing EFT interactions in neutron matter and nuclei"
+    event: "Nuclear Theory Seminar"
+    location: "Facility for Rare Isoptope Beams, Michigan State University, East Lansing, MI, USA"
+    date:
+    type: "Invited Talk"
+    link: 
+    slides: 
+    ribbon: AUG 2023
+    category: invited-talk
+
+  - title: "Second-Order Perturbation Theory in Continuum Quantum Monte Carlo"
+    event: "2023 Canadian Association of Physicists (CAP) Congress"
+    location: "University of New Brunswick, Fredericton, NB, Canada"
+    date:
+    type: "Contributed Talk"
+    link: 
+    slides: 
+    ribbon: JUN 2023
+    category: contributed-talk
+
+
+  - title: "How to consistently used modern nuclear forces in an ab initio technique"
+    event: "60th Winter Nuclear and Particle Physics Conference"
+    location: "Banff, AB, Canada"
+    date: 
+    type: "Contributed Talk"
+    link: 
+    slides: 
+    ribbon: FEB 2023
+    category: contributed-talk
