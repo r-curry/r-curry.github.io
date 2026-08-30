@@ -407,7 +407,6 @@ a:hover {
     padding: 1.25rem;
     margin-bottom: 1.25rem;
 
-    border-left: 4px solid var(--accent);
     border-radius: 10px;
 
     transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -415,7 +414,6 @@ a:hover {
 
 .project-card-a {
     background-color: var(--card-a);
-    border-left-color: var(--card-a-accent);
     color: var(--card-a-text);
 }
 
@@ -425,7 +423,6 @@ a:hover {
 
 .project-card-b {
     background-color: var(--card-b);
-    border-left-color: var(--card-b-accent);
     color: var(--card-b-text);
 }
 
@@ -482,14 +479,12 @@ a:hover {
     box-sizing: border-box;
     padding: 1.25rem;
     margin-bottom: 1.25rem;
-    border-left: 4px solid;
     border-radius: 10px;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .talk-card-a {
     background-color: var(--card-a);
-    border-left-color: var(--card-a-accent);
     color: var(--card-a-text);
 }
 
@@ -499,7 +494,6 @@ a:hover {
 
 .talk-card-b {
     background-color: var(--card-b);
-    border-left-color: var(--card-b-accent);
     color: var(--card-b-text);
 }
 
@@ -532,4 +526,15 @@ a:hover {
 
 .project img {
     box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 767px) {
+    .profile-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-section {
+        text-align: center;
+    }
 }
