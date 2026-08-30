@@ -418,6 +418,10 @@ a:hover {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.publication-title-mobile {
+    display: none;
+}
+
 .project-card-a {
     background-color: var(--card-a);
     color: var(--card-a-text);
@@ -582,11 +586,30 @@ a:hover {
         text-align: center;
     }
 }
+
 @media (max-width: 575px) {
-    .project .col-sm-8 {
-        padding-top: 1.0rem;
+
+    .publication-title-desktop {
+        display: none;
     }
-}
+
+    .publication-title-mobile {
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+	padding-left: 2.85rem;
+	padding-right: 1.5rem; 
+    }
+
+    .project .col-sm-8 {
+        padding-top: 1.5rem;
+    }
+}                           
+                        
+                            
+     
+ 
 
 .project {
     position: relative;

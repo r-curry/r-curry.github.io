@@ -2,14 +2,22 @@
     <div class="publication-ribbon">
 	    {{ project.ribbon }}
     </div>
+    <div class="publication-title-mobile">
+        {% if project.system-name %}
+            <b><i>{{ project.system-name }}</i>:</b>
+        {% endif %}
+        <b>{{ project.title }}</b>
+    </div>
     <div class="row mb-4">
         <div class="col-sm-4 d-flex align-items-center">
             <img width="100%" height="auto" class="w-full rounded-lg" src="{{ project.image }}">
         </div>
         <div class="col-sm-8">
-            {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
-            <b>{{ project.title }}</b>
-            <br>
+	    <div> class="publication-title-desktop">
+                {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
+                <b>{{ project.title }}</b>
+                <br>
+	    </div>
             <i><a href="{{ project.journal-web }}" target="_blank" rel="noopener">{{ project.journal }}</a></i> 
             {% if project.status %} <b style = "color: #e74d3c">[{{ project.status }}]</b> {% endif %}
             <br>
