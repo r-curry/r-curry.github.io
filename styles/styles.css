@@ -419,6 +419,7 @@ a:hover {
 }
 
 .publication-title-mobile {
+    color: var(--ribbon);
     display: none;
 }
 

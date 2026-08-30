@@ -18,11 +18,18 @@
                 <b>{{ project.title }}</b>
                 <br>
 	    </div>
-            <i><a href="{{ project.journal-web }}" target="_blank" rel="noopener">{{ project.journal }}</a></i> 
-            {% if project.status %} <b style = "color: #e74d3c">[{{ project.status }}]</b> {% endif %}
-            <br>
+            {% if project.journal or project.status %}
+                {% if project.journal %}
+                    <i><a href="{{ project.journal-web }}" target="_blank" rel="noopener">{{ project.journal }}</a></i>
+                {% endif %}
+            
+                {% if project.status %}
+                    <b style="color: #e74d3c">[{{ project.status }}]</b>
+                {% endif %}
+                <br>
+            {% endif %}
             {{ project.authors }}
-            <br>
+            <br>   
 	    {% if project.preprint %} <a href="{{ project.preprint }}" target="_blank" rel="noopener">[preprint]</a> {% endif %}
             <br>
 	    <u><b><i>Summary</i></b>:</u>
