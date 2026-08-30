@@ -512,7 +512,7 @@ a:hover {
     transform: rotate(-45deg);
 
     background: var(--ribbon);
-    color: var(--card-a);
+    color: #000000;
 
     font-weight: bold;
     font-size: 0.8rem;
@@ -633,7 +633,7 @@ a:hover {
     text-align: center;
 
     background: var(--ribbon);
-    color: var(--card-a);
+    color: #000000;
 
     font-weight: bold;
     font-size: 0.8rem;
