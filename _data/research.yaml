@@ -1,24 +1,101 @@
 categories:
 
-  - data-filter: three-nucleon forces
+  - data-filter: 3nf
     category-name: three-nucleon forces
   
   - data-filter: chiral-eft
     category-name: chiral effective field theory
-
-  - data-filter: qmc
-    category-name: quantum monte carlo
 
   - data-filter: perturb
     category-name: perturbation theory
 
 
   - data-filter: lattice
-    category-name: lattice-qmc
+    category-name: lattice
+
+  - data-filter: uq
+    category-name: uncertainty quantification
   
   - data-filter: cold-atoms
     category-name: ultracold atoms
 projects:
+  - title: Exploring the shell structure of trapped superfluid gases 
+    system-name: 
+    image: assets/img/trapped-pairing.png
+    journal: 
+    journal-web: 
+    status:
+    authors: Georgios Palkanoglou, Ryan Curry, and Stefano Gandolfi 
+    preprint: https://arxiv.org/abs/2607.14214
+    abstract-less: We study the behavior of an ultracold Fermi gas confined to a harmonic trap. We find that as pairing effects become more important, the shell effects induced by the trap become negligible, potentially with implications for shell effects in neutron-rich nuclei.  
+    abstract-more: 
+    ribbon: Preprint
+    category: "cold atoms"
+
+  - title: Conformal prediction for uncertainties in the neutron star equation of state
+    system-name: 
+    image: assets/img/cqr-neutronstar.png
+    journal: 
+    journal-web: 
+    status:
+    authors: Habib Yousefi Dezdarani, Ryan Curry, Cassandra L. Armstrong, and Alexandros Gezerlis
+    preprint: https://arxiv.org/abs/2604.21039
+    abstract-less: We extend previous work on conformalized quantile regression to study the neutron matter equation of state. As applications, we consider a toy-model employing a polytropic EOS, posterior distributions from the NMMA collaboration, as well as emulator samples for auxiliary-field diffusion Monte Carlo calculations of pure neutron matter.  
+    abstract-more: 
+    ribbon: Preprint
+    category: "uq"
+
+  - title: Quantum Monte Carlo Calculations of Light Nuclei with Fully Propagated Theoretical Uncertainties 
+    system-name: 
+    image: assets/img/emulator.png
+    journal: Accepted in Physics Letters B 
+    journal-web: 
+    status:
+    authors: Ryan Curry, Kai Hebeler, Stefano Gandolfi, Alexandros Gezerlis, Achim Schwenk, Rahul Somasundaram, and Ingo Tews  
+    preprint: https://arxiv.org/abs/2510.15860
+    abstract-less: We develop a framework for the propagation of theoretical uncertainties from the chiral EFT interaction to the level of many-body predictions. We build emulators for solutions to the Faddeev equations as well as auxiliary-field diffusion Monte Carlo, studying nuclei along the helium isotopic chain. 
+    abstract-more: 
+    ribbon: Phys. Lett. B 
+    category: "chiral-eft 3nf uq"
+
+  - title: Ab initio study of the neutron and Fermi polarons on the lattice
+    system-name: 
+    image: assets/img/polaron.png
+    journal: Physical Review C, <b>113</b>, 044002 (2026)
+    journal-web: https://journals.aps.org/prc/abstract/10.1103/s24h-lq8f
+    status:
+    authors: Ryan Curry, Jasmine Kozar, and Alexandros Gezerlis
+    preprint: https://arxiv.org/abs/2510.05233
+    abstract-less: We apply our lattice quantum Monte Carlo approach to the study of the Fermi and neutron polarons, in order to test how our approach fares for systems with an unfavorable sign problem. We find reasonably good agreement with previous theoretical and experimental studies.  
+    abstract-more: 
+    ribbon: Phys. Rev. C 
+    category: "cold-atoms, lattice"
+
+  - title: Conformal prediction for uncertainties in nucleon-nucleon scattering
+    system-name: 
+    image: assets/img/cqr-scattering.png
+    journal: Physical Review C, <b>113</b>, 014004 (2025)
+    journal-web: https://journals.aps.org/prc/abstract/10.1103/2n82-2jvv
+    status:
+    authors: Habib Yousefi Dezdarani, Ryan Curry, and Alexandros Gezerlis
+    preprint: https://arxiv.org/abs/2507.08085
+    abstract-less: We explore the application of conformal prediction (and in particular conformalized quantile regression) to construct uncertainty bands with guaranteed coverage for nucleon-nucleon phase shifts.  
+    abstract-more: 
+    ribbon: Phys. Rev. C 
+    category: "uq"
+  
+  - title: Perturbative treatment of non-local chiral interactions in auxiliary-field diffusion Monte Carlo 
+    system-name: 
+    image: assets/img/nonlocal-perturb.png
+    journal: Physical Review C, <b>111</b>, 015801 (2025)
+    journal-web: https://journals.aps.org/prc/abstract/10.1103/PhysRevC.111.015801
+    status:
+    authors: Ryan Curry, Rahul Somasundaram, Stefano Gandolfi, Alexandros Gezerlis, and Ingo Tews
+    preprint: https://arxiv.org/abs/2409.16365
+    abstract-less: We extend our previously developed formalism for second-order perturbative corrections in quantum Monte Carlo to handle non-local realistic nuclear interactions. We test our approach for a single operator at next-to-leading order applied to both the deuteron and neutron matter.  
+    abstract-more: 
+    ribbon: Phys. Rev. C 
+    category: "chiral-eft"
 
   - title: BCS-BEC crossover of the strongly interacting 6Li-40K mixture
     system-name: 
@@ -45,7 +122,7 @@ projects:
     abstract-less: We begin developing a novel lattice auxiliary-field quantum Monte Carlo approach with the end goal of studying nuclear physics. Here, we focus almost entirely on setting the stage for future work. We benchmark our method against the attractive Hubbard model, and few-body cold-atomic systems, before turning our attention to dilute neutrons.  
     abstract-more: 
     ribbon: Phil. Trans. <br> R. Soc. A
-    category: "lattice qmc"
+    category: "lattice"
 
 
   - title: Second-Order Perturbation Theory in Continuum Quantum Monte Carlo Calculations 
@@ -59,6 +136,6 @@ projects:
     abstract-less: We develop the formalism to compute second-order perturbation theory corrections in a quantum Monte Carlo context. We apply the formalism to simple nuclear physics test-cases, before investigating the perturbative convergence of the chiral EFT expansion. Though limited to central s-wave interactions, the formalism is applicable for more realistic nuclear interactions.   
     abstract-more: 
     ribbon: Phys. Rev. Res.
-    category: "chiral-eft qmc perturb"
+    category: "chiral-eft perturb"
 
 

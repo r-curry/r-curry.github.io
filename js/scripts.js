@@ -227,7 +227,7 @@ function initializeIsotopeProjects() {
     });
 }
 
-var currentFilterTalks = 'invited-talk';
+var currentFilterTalks = '*';
 
 var $talks = $('#talks').isotope({
     itemSelector: '.talk-card',
