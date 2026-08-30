@@ -17,6 +17,8 @@
     --card-b-accent: #CCB998;
     --card-b-text: #F1E8D2;
     --card-b-link: #E4B95B;
+
+    --card-link-hover: #F6D98B;
     /*
     --card-b: #AC9D12;
     --card-b-accent: #CCB998;
@@ -65,7 +67,7 @@ body {
 /* Hyperlink, hightlight, and text styles */
 a {
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
     background-color: transparent;
 }
 a:hover {
@@ -133,6 +135,7 @@ a:hover {
 
 #contact-card-trigger {
     color: var(--accent);
+    text-decoration: underline;
     cursor: pointer;
 }
 #contact-card-trigger:hover {
@@ -506,6 +509,13 @@ a:hover {
     box-shadow: 0 4px 12px var(--shadow);
 }            
 
+.project-card-a a:hover,
+.project-card-b a:hover,
+.talk-card-a a:hover,
+.talk-card-b a:hover {
+    color: var(--card-link-hover);
+}
+
 .talk-meta {
     font-size: 0.78rem;
     font-weight: 700;
@@ -533,8 +543,12 @@ a:hover {
         margin-left: auto;
         margin-right: auto;
     }
-
     .contact-section {
         text-align: center;
+    }
+}
+@media (max-width: 575px) {
+    .project .col-sm-8 {
+        padding-top: 1.0rem;
     }
 }
