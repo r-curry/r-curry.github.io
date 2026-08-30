@@ -30,21 +30,8 @@ projects:
     preprint: https://arxiv.org/abs/2407.12102
     abstract-less: We perform diffusion Monte Carlo (DMC) calculations of a cold-atomic system comprised of heavy and light particles that interact through a central interaction. We are able to study the full BCS-BEC crossover and provide predictions for universal quantities such as the contact parameter and quasi-particle dispersion.  
     abstract-more: 
+    ribbon: Phys. Rev. A 
     category: "cold-atoms"
-
-
-  - title: BCS-BEC crossover of the strongly interacting 6Li-40K mixture
-    system-name: 
-    image: assets/img/heavy-light-crossover.png
-    journal: Physical Review A, <b>110</b>, 043320 (2024)
-    journal-web: https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.043320
-    status:
-    authors: Stefano Gandolfi, Ryan Curry,  and Alexandros Gezerlis
-    preprint: https://arxiv.org/abs/2407.12102
-    abstract-less: We perform diffusion Monte Carlo (DMC) calculations of a cold-atomic system comprised of heavy and light particles that interact through a central interaction. We are able to study the full BCS-BEC crossover and provide predictions for universal quantities such as the contact parameter and quasi-particle dispersion.  
-    abstract-more: 
-    category: "cold-atoms"
-
 
 
   - title: Auxiliary Field Quantum Monte Carlo for dilute neutrons on the lattice
@@ -57,19 +44,9 @@ projects:
     preprint: https://arxiv.org/abs/2310.01504 
     abstract-less: We begin developing a novel lattice auxiliary-field quantum Monte Carlo approach with the end goal of studying nuclear physics. Here, we focus almost entirely on setting the stage for future work. We benchmark our method against the attractive Hubbard model, and few-body cold-atomic systems, before turning our attention to dilute neutrons.  
     abstract-more: 
+    ribbon: Phil. Trans. <br> R. Soc. A
     category: "lattice qmc"
 
-  - title: BCS-BEC crossover of the strongly interacting 6Li-40K mixture
-    system-name: 
-    image: assets/img/heavy-light-crossover.png
-    journal: Physical Review A, <b>110</b>, 043320 (2024)
-    journal-web: https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.043320
-    status:
-    authors: Stefano Gandolfi, Ryan Curry,  and Alexandros Gezerlis
-    preprint: https://arxiv.org/abs/2407.12102
-    abstract-less: We perform diffusion Monte Carlo (DMC) calculations of a cold-atomic system comprised of heavy and light particles that interact through a central interaction. We are able to study the full BCS-BEC crossover and provide predictions for universal quantities such as the contact parameter and quasi-particle dispersion.  
-    abstract-more: 
-    category: "cold-atoms"
 
   - title: Second-Order Perturbation Theory in Continuum Quantum Monte Carlo Calculations 
     system-name: 
@@ -81,6 +58,7 @@ projects:
     preprint: https://arxiv.org/abs/2302.07285 
     abstract-less: We develop the formalism to compute second-order perturbation theory corrections in a quantum Monte Carlo context. We apply the formalism to simple nuclear physics test-cases, before investigating the perturbative convergence of the chiral EFT expansion. Though limited to central s-wave interactions, the formalism is applicable for more realistic nuclear interactions.   
     abstract-more: 
+    ribbon: Phys. Rev. Res.
     category: "chiral-eft qmc perturb"
 
 

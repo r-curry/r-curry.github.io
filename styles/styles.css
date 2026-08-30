@@ -11,14 +11,17 @@
     --card-a: #39793C;
     --card-a-accent: #CCB998;
     --card-a-text: #F1E8D2;
-    --card-a-link: #E4B95B;
+    /*--card-a-link: #E4B95B;*/
 
     --card-b: #39793C;
     --card-b-accent: #CCB998;
     --card-b-text: #F1E8D2;
-    --card-b-link: #E4B95B;
+    /*--card-b-link: #E4B95B;*/
 
-    --card-link-hover: #F6D98B;
+    --card-link-hover: #E4B95B;
+    --ribbon: #E8DC2C;
+    --card-a-link: var(--ribbon);
+    --card-b-link: var(--ribbon);
     /*
     --card-b: #AC9D12;
     --card-b-accent: #CCB998;
@@ -484,6 +487,38 @@ a:hover {
     margin-bottom: 1.25rem;
     border-radius: 10px;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+    position: relative;
+    overflow: hidden;
+    padding-left: 5rem;
+}
+
+.talk-ribbon {
+    position: absolute;
+    top: 0.9rem;
+    left: -2.2rem;
+
+    width: 8rem;
+    height: 2.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(-45deg);
+
+    background: var(--ribbon);
+    color: var(--card-a);
+
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.05;
+    text-align: center;
+    letter-spacing: 0.08em;
+
+    z-index: 10;
+}
+.talk-ribbon span {
+    transform: translateX(0.15rem);
 }
 
 .talk-card-a {
@@ -551,4 +586,35 @@ a:hover {
     .project .col-sm-8 {
         padding-top: 1.0rem;
     }
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.publication-ribbon {
+    position: absolute;
+    top: 1.2rem;
+    left: -2.6rem;
+
+    width: 10rem;
+    height: 2.0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(-45deg);
+    text-align: center;
+
+    background: var(--ribbon);
+    color: var(--card-a);
+
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    line-height: 1.05;
+
+    z-index: 10;
 }

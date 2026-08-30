@@ -11,19 +11,21 @@ talks:
   - title: "QMC and Chiral EFT: Uncertainty Quantification and Perturbation Theory"
     event: "Nuclear Hamiltonians for Advancing Nuclear Physics and Beyond"
     location: "Institute for Nuclear Theory, Seattle, WA, USA"
-    date: "May 2026"
-    type: "Invited Talk"
+    date: 
+    type: Invited Talk 
     link: https://www.int.washington.edu/programs-and-workshops/26-1
     slides: assets/talks/INT-Nuclear-Hamiltonians_2026.pdf
+    ribbon: MAY 2026
     category: invited-talk
 
   - title: "Emulators for uncertainty propagation: from nuclear forces to many-body physics"
     event: "2026 Workshop on Progress in Ab Initio Nuclear Theory"
     location: "TRIUMF, Vancouver, BC, Canada"
-    date: "February 2026"
+    date: 
     type: "Invited Talk"
     link: https://indico.triumf.ca/event/829/ 
     slides: assets/talks/TRIUMF-2026.pdf
+    ribbon: FEB 2026
     category: invited-talk
 
 
@@ -43,6 +45,7 @@ talks:
     type: "Contributed Talk"
     link: https://www.aps.org/events/2024/fall-dnp
     slides: assets/talks/DNP-2024.pdf
+    ribbon: CONTRIBUTED
     category: contributed-talk
 
 

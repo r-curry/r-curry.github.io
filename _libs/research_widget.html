@@ -1,4 +1,7 @@
 <div class="project {% cycle 'project-card-a', 'project-card-b' %}" data-filter="{{ project.category }}">
+    <div class="publication-ribbon">
+	    {{ project.ribbon }}
+    </div>
     <div class="row mb-4">
         <div class="col-sm-4 d-flex align-items-center">
             <img width="100%" height="auto" class="w-full rounded-lg" src="{{ project.image }}">
