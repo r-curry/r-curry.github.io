@@ -1,0 +1,123 @@
+<!-- About section -->
+
+<div class="row mb-4">
+    <div class="col-lg-3 col-md-4">
+	<div class="profile-container">
+	    <img class="profile-image"
+	         src="{{ site.data.about.profile-pic }}"
+	         alt="{{ site.data.about.name }}">
+	</div>                                    
+        <div class="contact-section">
+            <h4>Contact</h4>
+        
+            {% if site.data.about.email %}
+                <a id="contact-card-trigger">Email</a>
+            {% endif %}
+
+            {% if site.data.about.scholar %}
+                <a href="{{ site.data.about.scholar }}"
+                   target="_blank"
+                   rel="noopener">Google Scholar</a>
+            {% endif %}
+        
+            {% if site.data.about.inspire %}
+                <a href="{{ site.data.about.inspire }}"
+                   target="_blank"
+                   rel="noopener">INSPIRE-HEP</a>
+            {% endif %}
+        
+            {% if site.data.about.orcid %}
+                <a href="{{ site.data.about.orcid }}"
+                   target="_blank"
+                   rel="noopener">ORCID</a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="contact-card-overlay" id="overlay-bg">
+        <div class="information_card">
+            <div id="front_end_card">
+                <div class="front">
+                    <div class="contact-info-card">
+    
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="code-content">
+                                <span class="keyword">class</span>
+                                <span class="namespace">ContactInformationCard</span>:
+                            </span>
+                        </div>
+    
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <span class="code-content">
+                                <span class="keyword">def</span>
+                                <span class="function">__init__</span>(<span class="self">self</span>):
+                            </span>
+                        </div>
+    
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="code-content">
+                                <span class="self">self</span>.<span class="self">email</span>
+                                = <span class="string">"{{ site.data.about.email }}"</span>
+                            </span>
+                        </div>
+    
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <span class="code-content"></span>
+                        </div>
+    
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <span class="code-content">
+                                <span class="function">print</span>(<span class="string">"tap outside to close."</span>)
+                            </span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-9 col-md-8">
+        <h2>
+            {{ site.data.about.name }} 
+        </h2>
+        <p></p>
+        {{ site.data.about.first-paragraph }}
+        <p></p>
+        {{ site.data.about.second-paragraph }}      
+        <p></p>
+        {{ site.data.about.third-paragraph }}      
+        <p></p>
+	{% if site.data.highlights %}
+	<div class="highlights-section">
+	    <h4>Highlights</h4>
+	
+	    {% for highlight in site.data.highlights %}
+	    <a class="highlight-card"
+	       href="{{ highlight.link }}"
+	       target="_blank"
+	       rel="noopener">
+	
+	        <div class="highlight-label">
+	            {{ highlight.label }}
+	        </div>
+	
+	        <div class="highlight-title">
+	            {{ highlight.title }}
+	        </div>
+	
+	        {% if highlight.description %}
+	        <div class="highlight-description">
+	            {{ highlight.description }}
+	        </div>
+	        {% endif %}
+	
+	    </a>
+	    {% endfor %}
+	</div>
+	{% endif %}
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="project {% cycle 'project-card-a', 'project-card-b' %}" data-filter="{{ project.category }}">
+    <div class="row mb-4">
+        <div class="col-sm-4 d-flex align-items-center">
+            <img width="100%" height="auto" class="w-full rounded-lg" src="{{ project.image }}">
+        </div>
+        <div class="col-sm-8">
+            {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
+            <b>{{ project.title }}</b>
+            <br>
+            <i><a href="{{ project.journal-web }}" target="_blank" rel="noopener">{{ project.journal }}</a></i> 
+            {% if project.status %} <b style = "color: #e74d3c">[{{ project.status }}]</b> {% endif %}
+            <br>
+            {{ project.authors }}
+            <br>
+	    {% if project.preprint %} <a href="{{ project.preprint }}" target="_blank" rel="noopener">[preprint]</a> {% endif %}
+            <br>
+	    <u><b><i>Summary</i></b>:</u>
+            {{ project.abstract-less }}
+            
+            {% if project.abstract-more %}
+                <span class="collapse" id="abstract-{{ forloop.index }}">
+                    {{ project.abstract-more }}
+                </span>
+                <span>
+                    <a href="#abstract-{{ forloop.index }}"
+                       data-toggle="collapse"
+                       onclick="toggleText(this)"
+                       id="link-abstract-{{ forloop.index }}">... See More</a>
+                </span>
+            {% endif %}
+        </div>                       
+    </div>
+</div>

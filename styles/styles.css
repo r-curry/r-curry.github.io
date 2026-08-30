@@ -1,0 +1,535 @@
+/* ============================================================
+   SITE COLOR PALETTE
+   Change the values in this block to recolor the site.
+   ============================================================ */
+:root {
+        /* Wada #249 inspired palette */
+
+    --background: #F3EBD8;
+    --surface: #E6D9C4;
+
+    --card-a: #39793C;
+    --card-a-accent: #CCB998;
+    --card-a-text: #F1E8D2;
+    --card-a-link: #E4B95B;
+
+    --card-b: #39793C;
+    --card-b-accent: #CCB998;
+    --card-b-text: #F1E8D2;
+    --card-b-link: #E4B95B;
+    /*
+    --card-b: #AC9D12;
+    --card-b-accent: #CCB998;
+    --card-b-text: #302D1E;
+    --card-b-link: #5A2F24;
+    */
+
+
+    --text: #2D2A26;
+    --accent: #527177;
+    --secondary: #833121;
+
+    --muted-text: #71685D;
+    --border: #CCB998;
+
+    --accent-soft: rgba(82, 113, 119, 0.16);
+    --selection: #DED1B7;
+    --shadow: rgba(45, 42, 38, 0.18);
+
+    --overlay: rgba(0, 0, 0, 0.50);
+
+    --disabled-bg: #DDD3C1;
+    --disabled-text: #777064;
+    --disabled-border: #B9AA90;
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /* Code/contact-card colors (normally leave these alone) */
+    --code-card-bg: #2D2D2D;
+    --code-muted: #888888;
+    --code-keyword: #569CD6;
+    --code-self: #82C5FC;
+    --code-string: #D69D85;
+    --code-namespace: #4EC9B0;
+    --code-function: #DCDCAA;
+}
+
+body {
+    font-family: "Computer Modern Serif", serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+
+/* Hyperlink, hightlight, and text styles */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+
+/* Styles for user selection */
+::selection {
+    background-color: var(--selection);
+}
+
+
+
+/* Border styles for profile picture */
+.profile-container {
+    margin-bottom: 40px;
+    margin-right: 0px;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    border: 5px solid var(--background);
+}
+
+.contact-section {
+    margin-top: 1rem;
+    color: var(--accent);
+}
+
+.contact-section h4 {
+    margin-bottom: 0.75rem;
+}
+
+.contact-section a {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: var(--accent);
+}
+
+.contact-section a:hover {
+    color: var(--secondary);
+}
+
+
+/* Styles for overlay background when activating contact info card */
+.contact-card-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-card-trigger {
+    color: var(--accent);
+    cursor: pointer;
+}
+#contact-card-trigger:hover {
+    text-decoration: underline;
+    color: var(--secondary);
+}
+
+/* Styles for information card and its child entities */
+.information_card {
+    font-family: 'Fira Code', monospace;
+    position: relative;
+    width: 450px;
+    height: 315px;
+}
+#front_end_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 5px var(--black);
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.front {
+    background: var(--code-card-bg);
+    color: var(--white);
+}
+                    
+.contact-info-card {
+    background: transparent;
+    color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}                            
+                        
+.code-line {
+    display: flex;
+}
+.line-number {
+    color: var(--code-muted);
+    width: 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.code-content {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+                        
+                            
+ 
+.keyword {
+    color: var(--code-keyword);
+}
+.self {
+    color: var(--code-self);
+}
+.string {
+    color: var(--code-string);
+}
+.namespace {
+    color: var(--code-namespace);
+}
+.function {
+    color: var(--code-function);
+}
+
+
+
+
+/* Styles for project list */
+#projects {
+    margin: 0px;
+}
+.project {
+    margin: 0px;
+}
+
+
+/* Styles for filter buttons */
+#filters-project .filter-button,
+#filters-talks .filter-button {
+    padding: 4px 7px;
+    border: 1px solid var(--text);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#filters-project .filter-button:hover,
+#filters-talks .filter-button:hover {
+    background-color: var(--accent-soft);
+}
+
+#filters-project .filter-button.active,
+#filters-talks .filter-button.active {
+    background-color: var(--accent-soft);
+}
+
+#filters-talks {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Styles for pager buttons */
+.isotope-pager-project {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.isotope-pager-project .pager {
+    display: block;
+    padding: 4px 7px;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    margin: 0 5px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.isotope-pager-project .pager:hover {
+    background-color: var(--accent-soft);
+    cursor: pointer;
+}
+.isotope-pager-project .pager.active {
+    background-color: var(--accent-soft);
+}
+
+
+
+/* Disabled stye for pager buttons */
+.isotope-pager-project .pager:disabled {
+    background-color: var(--disabled-bg);
+    color: var(--disabled-text);
+    cursor: default;
+    opacity: 0.5;
+    border: 1px solid var(--disabled-border);
+}
+
+
+
+
+
+/* Back-to-top button styles */
+#back-to-top-button {
+    display: inline-block;
+    background-color: var(--secondary);
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 7px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#back-to-top-button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: var(--white);
+}
+#back-to-top-button:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+}
+#back-to-top-button:active {
+    background-color: var(--secondary);
+}
+#back-to-top-button.show {
+    opacity: 0.70;
+    visibility: visible;
+}
+
+
+
+
+
+/* New style for webpage scrollbar */
+::-webkit-scrollbar-track {
+    background-color: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--code-muted);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Highlights */
+.highlights-section {
+    margin-top: 2rem;
+}
+
+.highlights-section h4 {
+    margin-bottom: 1rem;
+}
+
+.highlight-card {
+    display: block;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+
+    background-color: var(--surface);
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+
+    color: var(--text);
+    text-decoration: none;
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.highlight-card:hover {
+    color: var(--text);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.highlight-label {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+}
+
+.highlight-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.highlight-description {
+    margin-top: 0.35rem;
+    color: var(--muted-text);
+    font-size: 0.9rem;
+}
+
+/* Publication cards */
+.project {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card-a {
+    background-color: var(--card-a);
+    border-left-color: var(--card-a-accent);
+    color: var(--card-a-text);
+}
+
+.project-card-a a {
+    color: var(--card-a-link);
+}
+
+.project-card-b {
+    background-color: var(--card-b);
+    border-left-color: var(--card-b-accent);
+    color: var(--card-b-text);
+}
+
+.project-card-b a {
+    color: var(--card-b-link);
+}
+
+.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Research section menu */
+.research-menu {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.research-menu-button {
+    padding: 0.55rem 0.9rem;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+    color: var(--muted-text);
+    font-family: inherit;
+    font-size: 1.35rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.research-menu-button:hover {
+    color: var(--accent);
+}
+
+.research-menu-button.active {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+}
+
+.research-view {
+    display: none;
+}
+
+.research-view.active {
+    display: block;
+}
+
+
+/* Talk cards */
+.talk-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-left: 4px solid;
+    border-radius: 10px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.talk-card-a {
+    background-color: var(--card-a);
+    border-left-color: var(--card-a-accent);
+    color: var(--card-a-text);
+}
+
+.talk-card-a a {
+    color: var(--card-a-link);
+}
+
+.talk-card-b {
+    background-color: var(--card-b);
+    border-left-color: var(--card-b-accent);
+    color: var(--card-b-text);
+}
+
+.talk-card-b a {
+    color: var(--card-b-link);
+}
+
+.talk-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}            
+
+.talk-meta {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.25rem;
+}
+
+.talk-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.talk-event,
+.talk-link {
+    margin-top: 0.3rem;
+}
+
+.project img {
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.28);
+}

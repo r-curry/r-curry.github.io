@@ -1,0 +1,94 @@
+categories:
+
+  - data-filter: invited-talk 
+    category-name: invited talks
+  
+  - data-filter: contributed-talk
+    category-name: contributed talks
+
+talks:
+
+  - title: "QMC and Chiral EFT: Uncertainty Quantification and Perturbation Theory"
+    event: "Nuclear Hamiltonians for Advancing Nuclear Physics and Beyond"
+    location: "Institute for Nuclear Theory, Seattle, WA, USA"
+    date: "May 2026"
+    type: "Invited Talk"
+    link: https://www.int.washington.edu/programs-and-workshops/26-1
+    slides: assets/talks/INT-Nuclear-Hamiltonians_2026.pdf
+    category: invited-talk
+
+  - title: "Emulators for uncertainty propagation: from nuclear forces to many-body physics"
+    event: "2026 Workshop on Progress in Ab Initio Nuclear Theory"
+    location: "TRIUMF, Vancouver, BC, Canada"
+    date: "February 2026"
+    type: "Invited Talk"
+    link: https://indico.triumf.ca/event/829/ 
+    slides: assets/talks/TRIUMF-2026.pdf
+    category: invited-talk
+
+
+  - title: "Perturbative treatment of non-local operators in quantum Monte Carlo"
+    event: "2025 Workshop on Progress in Ab Initio Nuclear Theory"
+    location: "TRIUMF, Vancouver, BC, Canada"
+    date: "February 2025"
+    type: "Invited Talk"
+    link: https://indico.triumf.ca/event/608/ 
+    slides: assets/talks/TRIUMF-2025.pdf
+    category: invited-talk
+  
+  - title: "Perturbative treatment of non-local operators in an ab initio context"
+    event: "2024 American Physical Society (APS) Division of Nuclear Physics (DNP) Meeting"
+    location: "Boston MA, USA"
+    date: "October 2024"
+    type: "Contributed Talk"
+    link: https://www.aps.org/events/2024/fall-dnp
+    slides: assets/talks/DNP-2024.pdf
+    category: contributed-talk
+
+
+  - title: "Perturbative treatment of non-local operators in an ab initio context"
+    event: "T-2 Seminar"
+    location: "Los Alamos National Laboratory, Los Alamos, NM, USA"
+    date: "August 2024"
+    type: "Invited Talk"
+    link: 
+    slides: assets/talks/T2-2024.pdf
+    category: invited-talk
+
+
+  - title: "Perturbing the Envelope: A new approach to perturbation theory in quantum Monte Carlo"
+    event: "2024 T-Division Student Lightning Talks"
+    location: "Los Alamos National Laboratory, Los Alamos, NM, USA"
+    date: "July 2024"
+    type: "Contributed Talk"
+    link: 
+    slides: assets/talks/T_lightning-2024.pdf
+    category: contributed-talk
+
+
+  - title: "Probing the nuclear many-body problem with quantum Monte Carlo"
+    event: "2024 Canadian Association of Physicists (CAP) Congress"
+    location: "Western University, London, ON, Canada"
+    date: "May 2024"
+    type: "Contributed Talk"
+    link: https://indico.global/event/440/timetable/?view=standard_numbered_inline_minutes 
+    slides: assets/talks/CAP-2024.pdf
+    category: contributed-talk
+
+  - title: "Second order perturbation theory in quantum Monte Carlo"
+    event: "Theory Canada 16 Conference"
+    location: "Institute for Quantum Computing (IQC), Waterloo, ON, Canada"
+    date: "May 2024"
+    type: "Contributed Talk"
+    link: https://indico.global/event/441/ 
+    slides: assets/talks/TC-2024.pdf
+    category: contributed-talk
+  
+  - title: "Perturbing the Envelope: A new approach to perturbation theory in quantum Monte Carlo"
+    event: "7th Annual Meeting of the Toronto Ultra Cold Atoms Network (TUCAN)"
+    location: "McMaster University, Hamilton, ON, Canada"
+    date: "May 2024"
+    type: "Invited Talk"
+    link: 
+    slides: assets/talks/TUCAN-2024.pdf
+    category: invited-talk

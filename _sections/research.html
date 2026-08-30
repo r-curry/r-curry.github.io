@@ -1,0 +1,102 @@
+<!-- Research section -->
+
+<hr>
+<div class="row" id="research">
+    <div class="col">
+
+        <div class="research-menu" role="tablist" aria-label="Research content">
+            <button type="button"
+                    class="research-menu-button active"
+                    data-research-view="publications-view"
+                    role="tab"
+                    aria-selected="true">
+                Publications
+            </button>
+            <button type="button"
+                    class="research-menu-button"
+                    data-research-view="talks-view"
+                    role="tab"
+                    aria-selected="false">
+                Talks
+            </button>
+        </div>
+
+        <div id="publications-view" class="research-view active" role="tabpanel">
+            <p></p>
+            <div id="filters-project">
+                <button class="filter-button active" data-filter="*">all</button>
+                {% for category in site.data.research.categories %}
+                    <button class="filter-button" data-filter="{{ category.data-filter }}">{{ category.category-name }}</button>
+                {% endfor %}
+            </div>
+            <p></p>
+            <div id="projects" class="isotope">
+                {% for project in site.data.research.projects %}
+                    {% include_relative _libs/research_widget.html %}
+                {% endfor %}
+            </div>
+            <p></p>
+        </div>
+        <div id="talks-view" class="research-view" role="tabpanel">
+        
+            <p></p>
+        
+            <div id="filters-talks">
+                <button class="filter-button" data-filter="*">all</button>
+        
+                {% for category in site.data.talks.categories %}
+                    <button class="filter-button {% if category.data-filter == 'invited-talk' %}active{% endif %}"
+                            data-filter="{{ category.data-filter }}">
+                        {{ category.category-name }}
+                    </button>
+                {% endfor %}
+            </div>
+        
+            <p></p>
+        
+            <div id="talks" class="isotope">
+                {% for talk in site.data.talks.talks %}
+                    {% include_relative _libs/talk_widget.html %}
+                {% endfor %}
+            </div>
+        
+            <p></p>
+        
+        </div>                                                                   
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.research-menu-button').forEach(function(button) {
+    button.addEventListener('click', function() {
+
+        var targetView = this.getAttribute('data-research-view');
+
+        document.querySelectorAll('.research-menu-button').forEach(function(btn) {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-selected', 'false');
+        });
+
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true');
+
+        document.querySelectorAll('.research-view').forEach(function(view) {
+            view.classList.remove('active');
+        });
+
+        document.getElementById(targetView).classList.add('active');
+
+        if (targetView === 'publications-view' && window.jQuery) {
+            setTimeout(function() {
+                $('#projects').isotope('layout');
+            }, 0);
+        }
+        if (targetView === 'talks-view' && window.jQuery) {
+            setTimeout(function() {
+                $('#talks').isotope('layout');
+                recolorTalkCards();
+            }, 0);
+        }                                                           
+    });
+});
+</script>

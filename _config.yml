@@ -1,0 +1,10 @@
+# headers and icon 
+title: Ryan Curry 
+info: postdoc @ LANL
+icon-pic: 
+
+# exclude these items when generated website in _site/index.html
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

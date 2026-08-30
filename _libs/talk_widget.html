@@ -1,0 +1,50 @@
+<div class="talk-card" data-filter="{{ talk.category }}">
+    <div class="talk-meta">
+        {% if talk.type %}
+            <span>{{ talk.type }}</span>
+        {% endif %}
+
+        {% if talk.type and talk.date %}
+            <span> &middot; </span>
+        {% endif %}
+
+        {% if talk.date %}
+            <span>{{ talk.date }}</span>
+        {% endif %}
+    </div>
+
+    <div class="talk-title">
+        {{ talk.title }}
+    </div>
+
+    {% if talk.event or talk.location %}
+    <div class="talk-event">
+
+        {% if talk.event %}
+            {% if talk.link %}
+                <a href="{{ talk.link }}" target="_blank" rel="noopener">
+                    <i>{{ talk.event }}</i>
+                </a>
+            {% else %}
+                <i>{{ talk.event }}</i>
+            {% endif %}
+        {% endif %}
+
+        {% if talk.event and talk.location %}
+            <span> &middot; </span>
+        {% endif %}
+
+        {% if talk.location %}
+            <span>{{ talk.location }}</span>
+        {% endif %}
+
+    </div>
+    {% endif %}
+    {% if talk.slides %}
+    <div class="talk-link">
+        <a href="{{ talk.slides }}"
+           target="_blank"
+           rel="noopener">[slides]</a>
+    </div>
+    {% endif %}                        
+</div>
