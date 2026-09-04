@@ -48,8 +48,8 @@ projects:
   - title: Quantum Monte Carlo Calculations of Light Nuclei with Fully Propagated Theoretical Uncertainties 
     system-name: 
     image: assets/img/emulator.png
-    journal: Accepted in Physics Letters B 
-    journal-web: 
+    journal: Physics Letters B 
+    journal-web: https://www.sciencedirect.com/science/article/pii/S0370269326007586?via%3Dihub#fig0001
     status:
     authors: Ryan Curry, Kai Hebeler, Stefano Gandolfi, Alexandros Gezerlis, Achim Schwenk, Rahul Somasundaram, and Ingo Tews  
     preprint: https://arxiv.org/abs/2510.15860
